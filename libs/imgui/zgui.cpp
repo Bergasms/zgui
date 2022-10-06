@@ -1362,3 +1362,6 @@ ZGUI_API void zguiResetMouseDragDelta(ImGuiMouseButton button) {
     ImGui::ResetMouseDragDelta(button);
 }
 
+ZGUI_API float zguiGetMouseWheel() {
+    return ImGui::GetIO().MouseWheel;
+}

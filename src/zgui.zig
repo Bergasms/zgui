@@ -2729,3 +2729,8 @@ pub fn isMousePosValid(pos: [*]const [2]f32) bool {
     return zguiIsMousePosValid(pos);
 }
 extern fn zguiIsMousePosValid(pos: [*]const [2]f32) bool;
+
+pub fn getMouseWheel() f32 {
+    return zguiGetMouseWheel();
+}
+extern fn zguiGetMouseWheel() f32;
